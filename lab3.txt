@@ -1,0 +1,26 @@
+dcrtcp.lib
+
+configurar ip del dispositivo
+configurar mascara de red
+configurar default gateway -- no es necesario para este caso
+configurar dns --
+
+#define MY_IP_ADDRESS
+#define MY_NETMASK
+        MY_GATEWAY
+	
+
+Importante -- escribimos en sockets, para esto tenemos otra etiqueta:
+SOCK_BUF_SIZE 2048 BYTES Tx
+               -     -   Rx
+
+Importante: preciso un socket por cada conexion
+
+sock close -- no lo mata enseguida, debo esperar que el tick me diga que se cerro de verdad
+Puedo usar abort para cerrarlo enseguida pero no es recomendable.
+
+inicio programa
+me tira menu
+abro terminal, me conecto rabbit y veo menu
+
+
